@@ -1,0 +1,3 @@
+{'phone_number': '375292943414', 'first_name': '\uf8ff Great', 'last_name': 'Raksin \uf8ff', 'user_id': 115943804, 'vcard': None}  GreatRaksin  115943804{'phone_number': '375292943414', 'first_name': '\uf8ff Great', 'last_name': 'Raksin \uf8ff', 'user_id': 115943804, 'vcard': None}
+{'phone_number': '375292943414', 'first_name': '\uf8ff Great', 'last_name': 'Raksin \uf8ff', 'user_id': 115943804, 'vcard': None}
+{'phone_number': '375292943414', 'first_name': '\uf8ff Great', 'last_name': 'Raksin \uf8ff', 'user_id': 115943804, 'vcard': None}
