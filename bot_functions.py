@@ -38,15 +38,15 @@ def save_user(message):
         connect = connect_db()
         cont = message.contact
         u = add_user(cont.first_name,cont.last_name,cont.user_id, cont.phone_number, connect)
-            if u is not None:
-                bot.send_message(message.chat.id, 'спасибо')
-            else:
-                bot.send_message(message.chat.id, 'вы уе отправляли мне контакты')
+        if u is not None:
+            bot.send_message(message.chat.id, 'спасибо')
+        else:
+            bot.send_message(message.chat.id, 'вы уе отправляли мне контакты')
     elif message.location is not None:  # если локацию передали
         lat = message.location.latitude
-        lon =  message.location.longitude
-        forecast = get_forecast(lat,lon)
-        bot.send_message(message.chat.id, text = forecast,parse_mode = 'html'))
+        lon = message.location.longitude
+        forecast = get_forecast(lat, lon)
+        bot.send_message(message.chat.id, text=forecast, parse_mode='html')
 
 
 @bot.message_handler(content_types=['text'])  # эта функция обрабатывает текст
