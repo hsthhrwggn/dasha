@@ -2,6 +2,7 @@ import requests as r
 import os
 import sqlite3
 from datetime import datetime
+from jinja2 import Template
 
 
 
@@ -66,3 +67,9 @@ def add_user(f_name,l_name,tg_id,phone,connection):
         return 0
     except:
         return None
+
+def make_template(filename=):
+    with open(filename, 'r') as f:
+        text = f.read()
+    template = Template(text)
+    return template
